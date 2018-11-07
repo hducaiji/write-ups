@@ -8,12 +8,12 @@
 ![](ZJCTF2018%20final/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202018-11-05%20%E4%B8%8A%E5%8D%888.56.05.png)
 五分钟后还原代码，然后用 burp 拦截 ajax 请求，在回复报文中获得 flag。 当然，在写 wp 复看这段代码的时候还找到了 post 请求的代码段，这样自主发包 想必应该也是一种思路。
 决赛后新加post成功后的四张图片像素位比较，因为misc我不管，在此就不多赘述。
-<br>
+<br><br>
 
 ##  0x02知法懂法
 Sqlmap扫id字段dump出整个数据库，比对每一条和网络安全法有什么区别。发现第二十九条与标准法不同。
 然后猜谜，该提交什么呢，往哪里提交呢？ctf真是一个猜谜游戏，爆了网页，爆了属性名，最后发现提交正确的第二十九条内容即可获得flag
-<br>
+<br><br>
 
 ## 0x03再快一点
 原题，存在于各类基础ctf题库，脚本如下：
@@ -27,7 +27,7 @@ flag = base64.b64decode(base64.b64decode(s.get(url).headers[‘flag’]).decode(
 postdata = {‘margin’:flag}
 *print*(s.post(url, data=postdata).text)
 ```
-<br>
+<br><br>
 
 ## 0x04Blind
 写这篇writeup就想记录一下这个耻辱，自己拱手相让的冠军真的很令人难受。

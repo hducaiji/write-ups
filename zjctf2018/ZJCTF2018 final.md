@@ -131,7 +131,7 @@ while True:
             break
     print(key)
 ```
-个人认为，这个脚本，精髓就在where后的`in`和`not in`，败笔在(“%s”)前的`in`。不管如何，它能跑出答案，一切都无所谓了。
+个人认为，这个脚本，精髓就在where后的`in`和`not in`，败笔在(“%s”)前的`in`。值得吸收的点还有使用`for i in string.printable.replace('#', '')`来爆破字符，比我的脚本要精确一点。不管如何，它能跑出答案，一切都无所谓了。
 
 
 END:)
